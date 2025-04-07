@@ -107,7 +107,7 @@
 			}
 
 			function loadAsset(asset) {
-				loader.load('models/fbx/Martelo 2.fbx', function(group) {
+				loader.load(encodeURI('models/fbx/Martelo 2.fbx'), function(group) {
 					if (object) {
 						object.traverse(function(child) {
 							if (child.material) {
